@@ -2,6 +2,7 @@ const express =  require ('express');
 const app = express();
 const hbs = require('hbs');
 const path = require('path');
+
 const port =process.env.PORT || 3000;
 
 // public static path
@@ -39,6 +40,6 @@ app.get("*",(req, res)=>{
 
 
 app.listen( port ,() => {
-    console.log(' listening to the port at  ${ port} ')
+    console.log(` listening to the port at  ${ port} `)
 
 })
